@@ -1,0 +1,118 @@
+
+
+.recipe_container {
+  text-align: center;
+  padding: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+#recipes_name {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.search-container {
+  position: relative;
+  margin: 20px auto;
+  width: 300px;
+}
+
+/* Style the search input */
+#recipes_name {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #f11255;
+  background: transparent;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/* Style the search input placeholder */
+#recipes_name::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* Style the search input on focus */
+#recipes_name:focus {
+  border-color: #333;
+}
+
+/* Style the search icon */
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+/* Style the search button */
+.search_btn {
+  margin-top: 20px;
+  background-color: #0c0c0c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search_btn:hover {
+  background-color: #646362;
+}
+
+.recipes {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.recipes-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.recipe-item {
+  text-align: left;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.recipe-item:hover {
+  transform: scale(1.02);
+}
+
+.recipe-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.recipe-item h3 {
+  color: rgb(21, 22, 22);
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.recipe-item ul {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.recipe-item li {
+  font-size: 16px;
+}
